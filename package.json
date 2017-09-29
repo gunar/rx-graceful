@@ -1,6 +1,6 @@
 {
   "name": "rx-graceful",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make RxJS handle errors gracefully",
   "author": "@gunar",
   "license": "MIT",
@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "test": "node test.js | tap-spec",
+    "posttest": "assert-version-bump",
     "dev": "nodemon --exec 'npm test'"
   },
   "repository": {
@@ -34,9 +35,11 @@
   },
   "homepage": "https://github.com/gunar/rx-graceful#readme",
   "devDependencies": {
+    "@invisible/publish": "^1.1.5",
     "nodemon": "^1.12.1",
     "rxjs": "^5.4.3",
     "tap-spec": "^4.1.1",
     "tape": "^4.8.0"
-  }
+  },
+  "dependencies": {}
 }
